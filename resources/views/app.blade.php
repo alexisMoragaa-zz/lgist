@@ -39,8 +39,68 @@
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
 						<li><a href="{{ url('/auth/login') }}">Login</a></li>
-						<li><a href="{{ url('/auth/register') }}">Register</a></li>
+					
 					@else
+
+						@if(Auth::user()->perfil==6)
+
+							<li class="dropdown">
+								<a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanden="false">Almacenamiento <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="{{url('c_stor')}}">Cliente</a></li>
+									<li><a href="">Proveedor</a></li>
+									<li><a href="">Zonas y Bodegas</a></li>
+								</ul>
+							</li>
+							<li><a href="">Aprovisionamiento</a></li>
+							<li><a href="">Cadena de Produccion</a></li>
+							<li><a href="">Distribuicion y Transporte</a></li>
+							<li><a href="">Normas de Seguridad</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanden="false" >Formularios <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="">Aduaneros</a></li>
+									<li><a href="">Aereos</a></li>
+									<li><a href="">Terrestres</a></li>
+									<li><a href="">Maritimos</a></li>
+									<li><a href="">Ley 16.754()Prestamos del estado a una empresa</a></li>
+									<li><a href="">Oguc(Orgamismo de Urbanismo y Construccion)</a></li>
+									<li><a href="">Formatos de ctos Conductores</a></li>
+								</ul>
+							</li>
+							<li><a href="">Banco de Datos</a></li>
+							<li><a href="">Eejercicios</a></li>
+							<li><a href="">Ingreso Personal</a></li>
+						
+						@elseif(Auth::user()->perfil==4)
+
+							<li><a href="">Almacenamiento</a></li>
+							<li><a href="">Aprovisionamiento</a></li>
+							<li><a href="">Cadena de Produccion</a></li>
+							<li><a href="">Distribuicion y Transporte</a></li>
+							<li><a href="">Normas de Seguridad</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanden="false" >Formularios <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="">Aduaneros</a></li>
+									<li><a href="">Aereos</a></li>
+									<li><a href="">Terrestres</a></li>
+									<li><a href="">Maritimos</a></li>
+									<li><a href="">Ley 16.754()Prestamos del estado a una empresa</a></li>
+									<li><a href="">Oguc(Orgamismo de Urbanismo y Construccion)</a></li>
+									<li><a href="">Formatos de ctos Conductores</a></li>
+								</ul>
+							</li>
+							<li><a href="">Banco de Datos</a></li>
+							<li><a href="">Eejercicios</a></li>
+	
+						@elseif(Auth::user()->perfil==2)
+
+							<li><a href="">Agendar Cita</a></li>
+							<li><a href="">Movimiento Producto</a></li>
+							<li><a href="">Consultar Stock</a></li>
+
+						@endif
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
