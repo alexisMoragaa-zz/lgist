@@ -13,7 +13,7 @@
 	}
 	#content1{
 		width: 50%;
-		height: 850px;
+		height: auto;
 		border-style: solid;
 		border-color:gray; 
 		margin-left:14%;

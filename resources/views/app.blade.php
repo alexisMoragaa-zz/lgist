@@ -8,6 +8,8 @@
 
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
 
+	
+
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
 
@@ -114,6 +116,7 @@
 	</nav>
 
 	@yield('content')
+
 
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
