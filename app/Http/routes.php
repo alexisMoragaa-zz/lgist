@@ -15,7 +15,11 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
-route::get('c_stor','Views@clientStorage');
+/**Rutas Administrador*/
+Route::get('c_stor','Views@clientStorage');
+Route::resource('admin','AdminController');
+Route::get('addStorage','AdminController@addStorage');
+Route::post('CreateStorage','AdminController@CreateStorage');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',

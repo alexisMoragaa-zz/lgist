@@ -135,8 +135,8 @@
 		<div class="centro">
 			<input type="button" class="btn btn-success" value="Crear">	
 			<input type="button" class="btn btn-info" value="Grabar">
-			<input type="button" class="btn btn-danger" value="Editar">
-			<input type="button" class="btn btn-warning" value="Eliminar">
+			<input type="button" class="btn btn-warning" value="Editar">
+			<input type="button" class="btn btn-danger" value="Eliminar">
 			<input type="button" class="btn btn-primary" value="Buscar">
 		</div>
 	</div>
