@@ -95,6 +95,7 @@
 								<ul class="dropdown-menu">
 									<li> <a href="admin/create">Ingreso Personal</a></li>
 									<li><a href="{{url('addStorage')}}">Crear Bodegas</a></li>
+									<li><a href="{{ url('/auth/logout') }}">Salir</a></li>
 								</ul>
 							</li>
 						
@@ -134,10 +135,10 @@
 							<li><a href="">Consultar Stock</a></li>
 
 						@endif
-						<li class="dropdown nav_item">
+				<!--		<li class="dropdown nav_item">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="{{ url('/auth/logout') }}">Salir</a></li>
+								<li><a href="{{ url('/auth/logout') }}">Salir</a></li> -->
 							</ul>
 						</li>
 					@endif
