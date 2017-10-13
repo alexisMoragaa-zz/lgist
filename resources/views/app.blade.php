@@ -89,7 +89,7 @@
 								</ul>
 
 							</li>
-							<li class="nav_item" ><a href="">Eejercicios</a></li>
+							<li class="nav_item" ><a href="">Ejercicios</a></li>
 							<li  class="dropdown nav_item">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Administrador <span class="caret"></span></a>
 								<ul class="dropdown-menu">
