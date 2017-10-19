@@ -18,6 +18,7 @@ Route::get('home', 'HomeController@index');
 /**Rutas Administrador*/
 Route::get('c_stor','Views@clientStorage');
 Route::resource('admin','AdminController');
+Route::resource('client','ClientController');
 Route::get('addStorage','AdminController@addStorage');
 Route::post('CreateStorage','AdminController@CreateStorage');
 
