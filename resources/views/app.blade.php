@@ -55,12 +55,13 @@
 
 				<ul class="nav navbar-nav navbar-right">
 					@if (Auth::guest())
-						<li><a class="a" href="{{ url('/auth/login') }}">Ingresar</a></li>
+						<li ><a class="a" href="{{ url('/auth/login') }}">Ingresar</a></li>
 					
 					@else
 
 						@if(Auth::user()->perfil==6)
 
+							<li class="nav_item"><a class="a" href="{{url('solicitudes')}}">Solicitudes</a></li>
 							<li class="nav_item" class="dropdown">
 								<a class="a" href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanden="false">Almacenamiento <span class="caret"></span></a>
 								<ul class="dropdown-menu">

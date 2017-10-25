@@ -96,5 +96,13 @@ class AdminController extends Controller {
 		}*/
 		return("lelgasmos hasta aca");
 	}
+	public function solicitudes(){
+
+		return view('admin.solicitudesClientes');
+	}
+	public function detalleSolicitud(){
+
+		return view('admin.detalleSolicitudCliente');
+	}
 
 }

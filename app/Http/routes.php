@@ -15,12 +15,18 @@ Route::get('/', 'WelcomeController@index');
 
 Route::get('home', 'HomeController@index');
 
-/**Rutas Administrador*/
+
+Route::group(['middleware' => 'auth'], function () {
+    //
 Route::get('c_stor','Views@clientStorage');
 Route::resource('admin','AdminController');
 Route::resource('client','ClientController');
 Route::get('addStorage','AdminController@addStorage');
 Route::post('CreateStorage','AdminController@CreateStorage');
+Route::get('solicitudes','AdminController@solicitudes');
+Route::get('detalleSolicitud','AdminController@detalleSolicitud');
+});
+
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
