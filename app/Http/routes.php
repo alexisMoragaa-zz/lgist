@@ -24,6 +24,7 @@ Route::resource('client','ClientController');
 Route::get('addStorage','AdminController@addStorage');
 Route::post('CreateStorage','AdminController@CreateStorage');
 Route::get('solicitudes','AdminController@solicitudes');
+rOUTE::GET('despachoSolicitud','AdminController@despachoSolicitud');
 Route::get('detalleSolicitud','AdminController@detalleSolicitud');
 });
 

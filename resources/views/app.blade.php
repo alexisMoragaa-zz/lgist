@@ -86,6 +86,7 @@
 							<li class="nav_item" class="dropdown">
 								<a class="a" href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Bodega <span class="caret"></span></a>
 								<ul class="dropdown-menu">
+									<li><a class="a" href="{{url('despachoSolicitud')}}">Realizar Pedido</a></li>
 									<li><a class="a" href="">Banco de Datos</a></li>
 									<li><a class="a" href="">Aprovisionamiento</a></li>
 									<li><a class="a" href="">Cadena de Produccion</a></li>

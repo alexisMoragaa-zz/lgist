@@ -105,4 +105,9 @@ class AdminController extends Controller {
 		return view('admin.detalleSolicitudCliente');
 	}
 
+	public function despachoSolicitud(){
+
+		return view('admin.realizarPicking');
+	}
+
 }
